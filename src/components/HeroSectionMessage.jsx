@@ -1,7 +1,7 @@
 const HeroSectionMessage = () => {
   return (
     <div className="center relative bottom-32 pb-2">
-      <section className="bg-black w-[calc(100%-2rem)] lg:w-[calc(100%-45rem)] p-3 lg:p-7 text-white text-center rounded-xl shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+      <section className="bg-black w-[calc(100%-1.6rem)] lg:w-[calc(100%-45rem)] p-3 lg:p-7 text-white text-center rounded-xl shadow-[0_0_2px_rgba(255,255,255,0.5)]">
         <h1 className="font-semibold text-2xl lg:text-3xl">
           Craving Variety ?
         </h1>
