@@ -32,6 +32,7 @@ export default {
       });
       addUtilities({
         ".center": { "@apply grid place-items-center": {} },
+        ".prevent-scrolling": { "@apply overflow-hidden": {} },
       });
     }),
   ],
