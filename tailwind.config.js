@@ -28,7 +28,7 @@ export default {
           'to': { transform: 'translateY(0)', opacity: '1' },
         },
         slideDown: {
-          'from': { transform: 'translateY(-8rem)', opacity: '0' },
+          'from': { transform: 'translateY(-5rem)', opacity: '0' },
           'to': { transform: 'translateY(0)', opacity: '1' },
         },
       },
