@@ -24,7 +24,10 @@ const Cart = props => {
           <span className="block">₦69.69</span>
         </div>
         <div className="flex justify-end gap-4">
-          <button className="px-5 py-0.5 rounded-xl font-medium text-amber-900 border border-amber-900">
+          <button
+            className="px-5 py-0.5 rounded-xl font-medium text-amber-900 border border-amber-900"
+            onClick={() => props.setShowCart(prevState => !prevState)}
+          >
             Close
           </button>
           <button className="px-5 py-0.5 rounded-xl font-medium bg-amber-900 text-white">
