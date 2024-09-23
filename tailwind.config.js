@@ -18,6 +18,20 @@ export default {
         "hero-image": "url('/src/assests/hero-image.jpg')",
         "desktop-hero-image": "url('/src/assests/desktop-hero-image.jpg')",
       },
+      animation: {
+        slideUp: 'slideUp 0.8s forwards',
+        slideDown: 'slideDown 0.8s forwards',
+      },
+      keyframes: {
+        slideUp: {
+          'from': { transform: 'translateY(3rem)', opacity: '0' },
+          'to': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          'from': { transform: 'translateY(-3rem)', opacity: '0' },
+          'to': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
     },
   },
   plugins: [
