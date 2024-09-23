@@ -19,7 +19,7 @@ export default {
         "desktop-hero-image": "url('/src/assests/desktop-hero-image.jpg')",
       },
       animation: {
-        slideUp: 'slideUp 0.8s forwards',
+        slideUp: 'slideUp 1s forwards',
         slideDown: 'slideDown 0.8s forwards',
       },
       keyframes: {
@@ -28,7 +28,7 @@ export default {
           'to': { transform: 'translateY(0)', opacity: '1' },
         },
         slideDown: {
-          'from': { transform: 'translateY(-3rem)', opacity: '0' },
+          'from': { transform: 'translateY(-10rem)', opacity: '0' },
           'to': { transform: 'translateY(0)', opacity: '1' },
         },
       },
