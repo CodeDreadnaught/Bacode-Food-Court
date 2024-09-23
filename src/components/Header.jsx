@@ -1,6 +1,6 @@
 import HeaderCartButton from "./HeaderCartButton";
 
-const Header = () => {
+const Header = props => {
   return (
     <header>
       <nav className="px-2.5 lg:px-10 bg-amber-900 text-white h-[8.5dvh] flex items-center justify-between fixed w-full z-[1]">
@@ -10,7 +10,7 @@ const Header = () => {
           </a>
         </section>
         <section>
-          <HeaderCartButton />
+          <HeaderCartButton onShowCart={props.onShowCart} />
         </section>
       </nav>
     </header>

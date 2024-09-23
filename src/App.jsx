@@ -9,8 +9,8 @@ const App = () => {
 
   return (
     <>
-      {showCart && <Cart showCart={showCart} setShowCart={setShowCart} />}
-      <Header />
+      {showCart && <Cart showCart={showCart} onShowCart={setShowCart} />}
+      <Header onShowCart={setShowCart} />
       <Main />
       {/* <Footer /> */}
     </>
