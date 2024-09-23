@@ -2,9 +2,23 @@ import ReactDOM from "react-dom";
 import { useEffect } from "react";
 
 const ModalOverlay = props => {
+  const clickHandler = event => {
+    const clickedElement = event.target;
+
+    if (
+      clickedElement.classList.contains("overlay-backdrop") &&
+      props.onShowModal
+    ) {
+      props.onShowModal(false);
+    }
+  };
+
   return (
     <div className="fixed w-screen h-screen z-10">
-      <div className="size-full backdrop-blur-[3px] bg-[rgba(0,0,0,0.6)] center">
+      <div
+        className="overlay-backdrop size-full backdrop-blur-[3px] bg-[rgba(0,0,0,0.6)] center"
+        onClick={clickHandler}
+      >
         {props.children}
       </div>
     </div>
@@ -23,7 +37,9 @@ const Modal = props => {
   return (
     <>
       {ReactDOM.createPortal(
-        <ModalOverlay>{props.children}</ModalOverlay>,
+        <ModalOverlay onShowModal={props.onShowModal}>
+          {props.children}
+        </ModalOverlay>,
         document.querySelector("#overlay-modal-root")
       )}
     </>

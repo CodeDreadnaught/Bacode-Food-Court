@@ -16,7 +16,7 @@ const Cart = props => {
   );
 
   return (
-    <Modal className="">
+    <Modal onShowModal={props.onShowCart}>
       <div className="bg-white w-[calc(100%-1.5rem)] lg:w-[calc(100%-45rem)] p-3 rounded-xl flex flex-col gap-4">
         {cartItems}
         <div className="flex justify-between font-semibold text-lg">
@@ -26,7 +26,7 @@ const Cart = props => {
         <div className="flex justify-end gap-4">
           <button
             className="px-5 py-0.5 rounded-xl font-medium text-amber-900 border border-amber-900"
-            onClick={() => props.onShowCart(prevState => !prevState)}
+            onClick={() => props.onShowCart(false)}
           >
             Close
           </button>
